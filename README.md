@@ -14,7 +14,7 @@ A beautiful and responsive Twitter UI clone built using **Tailwind CSS**. This p
 ## 🌍 Live Demo
 
 Check out the live version of this project:
-🔗 [Twitter UI Clone - Live Demo](your-deployment-link-here)
+🔗 [Twitter UI Clone - Live Demo](https://hassaanmemon026.github.io/Twitter-UI-Clone/)
 
 ## 🛠️ Technologies Used
 
@@ -26,11 +26,11 @@ Check out the live version of this project:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/twitter-ui-clone.git
+   git clone git@github.com:HassaanMemon026/Twitter-UI-Clone.git
    ```
 2. Navigate to the project folder:
    ```sh
-   cd twitter-ui-clone
+   cd Twitter-UI-Clone
    ```
 3. Open `index.html` in your browser.
 
