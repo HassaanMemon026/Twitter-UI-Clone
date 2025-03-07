@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/X</title>
+    <link rel="shortcut icon" href="https://abs.twimg.com/favicons/twitter-pip.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="bg-black text-white overflow-x-hidden">
+    <div class="container mx-auto my-4 flex">
+        <div class="first sticky overflow-y-auto [&::-webkit-scrollbar]:hidden top-0 h-[100vh] mb-2.5 w-11 md:w-[70%] ">
+            <div class="logo my-4 invert">
+                <svg viewBox="0 0 24 24" aria-hidden="true"
+                    class="w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-lrsllp r-1nao33i r-16y2uox r-8kz0gk">
+                    <g>
+                        <path
+                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                        </path>
+                    </g>
+                </svg>
+            </div>
+            <div class="sitebar flex justify-end">
+                <ul class="text-xl flex flex-col space-y-4 md:px-11 font-semibold">
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">home</span> <span class="hidden md:block">
+                            Home</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">search</span> <span class="hidden md:block">
+                            Explore</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">notifications</span> <span
+                            class="hidden md:block"> Notification</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined">chat</span> <span class="hidden md:block"> Grok</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">list</span> <span class="hidden md:block">
+                            Lists</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">bookmarks</span> <span class="hidden md:block">
+                            Bookmarks</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">communities</span> <span
+                            class="hidden md:block"> Communities</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">box</span> <span class="hidden md:block">
+                            Premium</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">person</span> <span class="hidden md:block">
+                            Profile</span>
+                    </li>
+                    <li
+                        class="flex justify-start items-center gap-3 w-fit pr-4 pl-2.5 py-1.5 hover:rounded-[100px] hover:bg-neutral-900 hover:cursor-pointer">
+                        <span class="material-symbols-outlined text-xl">more</span> <span class="hidden md:block">
+                            More</span>
+                    </li>
+                </ul>
+
+            </div>
+            <div class="button hidden md:flex w-full  justify-end my-7">
+                <button
+                    class="bg-blue-500 transition-all hover:bg-blue-600 w-[55%] mx-6 text-lg  text-white px-4 py-3 rounded-[100px] font-semibold cursor-pointer">Posts</button>
+            </div>
+            <div class="button-icon flex md:hidden justify-center my-7">
+                <button
+                    class="bg-blue-500 transition-all hover:bg-blue-600  flex justify-center items-center text-center p-2 text-lg  text-white  rounded-[100px] font-semibold cursor-pointer">
+                    <span class="material-symbols-outlined">edit</span>
+                </button>
+            </div>
+            <div class="profile hidden my-10 w-full md:flex justify-end">
+                <a href="https://github.com/HassaanMemon026/" class="m-1.5 p-0 rounded-full" target="_blank">
+                    <div
+                        class="person cursor-pointer bg-[#171717] hover:bg-[#262626] transition rounded-full  p-2 w-fit justify-center items-center  flex gap-5">
+                        <div class="justify-center w-fit items-center gap-2 flex ">
+                            <div class="img w-fit">
+                                <img src="https://avatars.githubusercontent.com/u/162817769?v=4" alt=""
+                                    class="w-9 h-9 rounded-full" />
+                            </div>
+                            <div class="info mr-2 w-fit">
+                                <div class="name text-base font-semibold">Muhammad Hassaan</div>
+                                <div class="username text-xs text-neutral-500">@HassaanMemon026</div>
+                            </div>
+                        </div>
+                        <div class="dot w-fit flex justify-center items-center px-2.5  cursor-pointer ">
+                            <span
+                                class="!text-lg text-gray-500 cursor-pointer absolute right-4 my-auto   material-symbols-outlined">more_horiz</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="second  main w-full border-[0.8px] border-x-gray-600 border-y-0">
+            <div class="top flex sticky top-0 bg-black z-50 backdrop-blur-3xl opacity-87 justify-center text-center">
+
+                <div class="left hover:bg-neutral-900 transition-all w-1/2 flex p-2 justify-center items-center font-semibold cursor-pointer ">For you</div>
+                <div
+                    class="right hover:bg-neutral-900 transition-all w-1/2 flex p-2 justify-center items-center font-medium text-neutral-500 cursor-pointer ">
+                    Following</div>
+                <div class="settings hover:bg-neutral-900 transition-all cursor-pointer text-neutral-300 bg-blue-70 px-3 py-2"><span
+                        class="material-symbols-outlined">settings</span></div>
+                <div class="active bg-blue-500  rounded-3xl inline-block h-[3px] left-[17.5%] bottom-1 w-16 absolute">
+                </div>
+            </div>
+            <div class="hr h-[0.8px] bg-gray-600"></div>
+            <div class="whatishapp ">
+                <div class="flex ">
+                    <div class="img m-4">
+                        <img class="w-9 h-9 rounded-full" src="https://avatars.githubusercontent.com/u/162817769?v=4"
+                            alt="">
+                    </div>
+                    <div class="input my-5.5 w-full">
+                        <input class="outline-none text-lg items-center border-none text-gray-400" type="text"
+                            placeholder="What is happening?!" />
+                        <div class="globe mt-2.5 mb-2.5 cursor-pointer text-blue-400  text-xs flex items-center gap-2">
+                            <span class="!text-xl  material-symbols-outlined ">public</span>
+                            <span>Everyone can Reply</span>
+                        </div>
+                        <div class="hr w-[95%] bg-gray-700 h-[0.5px]"></div>
+                        <div class="flex items-center justify-between">
+                            <div class="blue-icon  text-[#3894ff] mt-2.5 flex items-center gap-3">
+                                <span class="cursor-pointer material-symbols-outlined">image</span>
+                                <span class="cursor-pointer material-symbols-outlined">gif_box</span>
+                                <span class="cursor-pointer material-symbols-outlined">event_list</span>
+                                <span class="cursor-pointer material-symbols-outlined">sentiment_satisfied</span>
+                                <span class="cursor-pointer material-symbols-outlined">calendar_clock</span>
+                                <span class="cursor-pointer  opacity-50 material-symbols-outlined">location_on</span>
+
+                            </div>
+                            <div class="post-btn">
+                                <button
+                                    class="bg-blue-500 opacity-60 transition-all hover:bg-[#2876f5] w-[55%] mx-6 mt-2 text-white px-3.5 py-1.5 rounded-[100px] font-semibold cursor-pointer">Posts</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="hr h-[0.8px] bg-gray-600"></div>
+            <div class="posts ">
+                <div class="post mb-2">
+                    <div class="flex">
+                        <div class="img m-4 mr-2">
+                            <img class="w-9 h-9 rounded-full"
+                                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRty-UxyadFHJpjASbTnwUo9qHUEshYvkACUg&s"
+                                alt="">
+                        </div>
+                        <div class="main-post w-full">
+                            <div class="name  relative mb-0 my-3.5 flex gap-3.5">
+                                <span class="font-semibold hover:underline transition-all"><a
+                                        href="https://github.com/HassaanMemon026/" target="_blank">Elon Musk</a></span>
+                                <span class="text-gray-600 pt-1 text-sm ">@ElonMusk · 6h </span>
+                                <span
+                                    class="!text-lg text-gray-600 cursor-pointer absolute right-4 my-auto   material-symbols-outlined">more_horiz</span>
+                            </div>
+                            <div class="des my-2 text-sm text-gray-300 opacity-95"> I spent $44 billion for this app and
+                                now Lizard boy just
+                                decided to hit copy and paste.
+
+                                It’s personal now.
+
+                                See you in the cage, Zuck.</div>
+
+                            <div class="like">
+                                <div class="flex text-sm mr-4 justify-between">
+                                    <div
+                                        class="comment transition hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/bubble-chat-stroke-rounded.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M22 11.5667C22 16.8499 17.5222 21.1334 12 21.1334C11.3507 21.1343 10.7032 21.0742 10.0654 20.9545C9.60633 20.8682 9.37678 20.8251 9.21653 20.8496C9.05627 20.8741 8.82918 20.9948 8.37499 21.2364C7.09014 21.9197 5.59195 22.161 4.15111 21.893C4.69874 21.2194 5.07275 20.4112 5.23778 19.5448C5.33778 19.0148 5.09 18.5 4.71889 18.1231C3.03333 16.4115 2 14.1051 2 11.5667C2 6.28357 6.47778 2 12 2C17.5222 2 22 6.28357 22 11.5667Z"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="round"></path>
+                                            <path d="M11.9955 12H12.0045M15.991 12H16M8 12H8.00897" stroke="#475569"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg><span> 990</span>
+                                    </div>
+                                    <div
+                                        class="re hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 transition  cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/repeat-stroke-sharp.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M3.31245 15.9844C1.62328 13.7974 1.52213 10.263 3.36893 7.90974C5.21573 5.55645 6.8522 4.97575 10.5565 4.97575C13.3938 4.97575 17.0435 4.9878 18.7683 4.9878M15.0229 2.02051L18.2839 4.81639"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="bevel"></path>
+                                            <path
+                                                d="M20.7196 8.05413C22.4088 10.2412 22.51 13.7756 20.6632 16.1288C18.8164 18.4821 17.1799 19.0628 13.4756 19.0628C10.6383 19.0628 6.98856 19.0508 5.26376 19.0508M9.00916 22.0181L5.7482 19.2222"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="bevel"></path>
+                                        </svg><span>3.4k</span>
+                                    </div>
+                                    <div
+                                        class="like hover:text-red-500 hover:bg-gray-900 hover:rounded-full p-1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/favourite-stroke-standard.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M2 9.24835C2 5.90905 4.16367 2.99998 7.68 2.99998C9.64299 2.99998 11 3.99861 12 5.49861C13 3.99861 14.357 2.99998 16.32 2.99998C19.8363 2.99998 22 5.90905 22 9.24835C22 15.0599 16.6416 18.6767 12 20.9986C7.35839 18.6767 2 15.0599 2 9.24835Z"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="round"></path>
+                                        </svg><span> 1.2k</span>
+                                    </div>
+                                    <div
+                                        class="views hover:text-red-500 hover:bg-gray-900 hover:rounded-full p-1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <span class="!text-lg material-symbols-outlined">bar_chart_4_bars</span>
+                                        <span> 4.1M</span>
+                                    </div>
+                                    <div class="fav-or-share items-center flex gap-2 cursor-pointer text-gray-600">
+                                        <span class="material-symbols-outlined">bookmark</span>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/upload-04-solid-standard.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12 15.2499C12.5523 15.2499 13 14.8022 13 14.2499V7.74991H14.5C14.9045 7.74991 15.2691 7.50627 15.4239 7.13259C15.5787 6.75892 15.4931 6.3288 15.2071 6.0428L12.7071 3.5428C12.3166 3.15228 11.6834 3.15228 11.2929 3.5428L8.79292 6.0428C8.50692 6.3288 8.42137 6.75892 8.57615 7.13259C8.73093 7.50627 9.09557 7.74991 9.50003 7.74991H11V14.2499C11 14.8022 11.4477 15.2499 12 15.2499Z"
+                                                fill="#475569"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.83576 15.7637C4.38053 15.6729 4.89575 16.0409 4.98655 16.5857L5.20802 17.9145C5.28838 18.3967 5.70557 18.7501 6.19441 18.7501H17.8059C18.2947 18.7501 18.7119 18.3967 18.7923 17.9145L19.0138 16.5857C19.1046 16.0409 19.6198 15.6729 20.1646 15.7637C20.7093 15.8545 21.0773 16.3697 20.9865 16.9145L20.7651 18.2433C20.524 19.6898 19.2724 20.7501 17.8059 20.7501H6.19441C4.72789 20.7501 3.47632 19.6898 3.23523 18.2433L3.01376 16.9145C2.92297 16.3697 3.29099 15.8545 3.83576 15.7637Z"
+                                                fill="#475569"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hr h-[0.8px] bg-gray-600"></div>
+                <div class="post mb-2">
+                    <div class="flex">
+                        <div class="img m-4 mr-2">
+                            <img class="w-9 h-9 rounded-full"
+                                src="https://avatars.githubusercontent.com/u/162817769?v=4" alt="">
+                        </div>
+                        <div class="main-post w-full">
+                            <div class="name  relative mb-0 my-3.5 flex gap-3.5">
+                                <span class="font-semibold hover:underline transition-all"><a
+                                        href="https://github.com/HassaanMemon026/" target="_blank">Muhammad
+                                        Hassaan</a></span>
+                                <span class="text-gray-600 pt-1 text-sm ">@HassaanMemon026 · 8h </span>
+                                <span
+                                    class="!text-lg text-gray-600 cursor-pointer absolute right-4 my-auto   material-symbols-outlined">more_horiz</span>
+                            </div>
+                            <div class="des text-sm text-gray-300 opacity-95">Living Legend</div>
+                            <div class="postimg mb-2 mt-3 mr-5 ml-0">
+                                <img class="rounded-xl w-full"
+                                    src="https://scontent.fkhi10-1.fna.fbcdn.net/v/t39.30808-6/424958422_686240730386495_4743743873486916248_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeFwSJuztyUSEdO5ed1Z6eAaMUTRYz6g9JkxRNFjPqD0mfVNOp2vcqDZJeLUCnYHzJUWVZzQcz_1bBAeJ536gB71&_nc_ohc=UYi-6qXEZfYQ7kNvgHo0QKL&_nc_oc=Adh65kaN0nzuaQLi0sXEZjUeMAgKjJi2z7isBysHPSy6sw-CA5w0oi4J9tuhTC2Hlyk&_nc_zt=23&_nc_ht=scontent.fkhi10-1.fna&_nc_gid=AvwBb513XYG1t6ocqu4I6n5&oh=00_AYAsXQEL9RDPNSRjkBkULDBbQEWtLdWJQo9JPRRpOK-Riw&oe=67BBCB0B"
+                                    alt="">
+                            </div>
+                            <div class="like">
+                                <div class="flex text-sm mr-4 justify-between">
+                                    <div
+                                        class="comment transition hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/bubble-chat-stroke-rounded.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M22 11.5667C22 16.8499 17.5222 21.1334 12 21.1334C11.3507 21.1343 10.7032 21.0742 10.0654 20.9545C9.60633 20.8682 9.37678 20.8251 9.21653 20.8496C9.05627 20.8741 8.82918 20.9948 8.37499 21.2364C7.09014 21.9197 5.59195 22.161 4.15111 21.893C4.69874 21.2194 5.07275 20.4112 5.23778 19.5448C5.33778 19.0148 5.09 18.5 4.71889 18.1231C3.03333 16.4115 2 14.1051 2 11.5667C2 6.28357 6.47778 2 12 2C17.5222 2 22 6.28357 22 11.5667Z"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="round"></path>
+                                            <path d="M11.9955 12H12.0045M15.991 12H16M8 12H8.00897" stroke="#475569"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg><span> 990</span>
+                                    </div>
+                                    <div
+                                        class="re hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 transition  cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/repeat-stroke-sharp.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M3.31245 15.9844C1.62328 13.7974 1.52213 10.263 3.36893 7.90974C5.21573 5.55645 6.8522 4.97575 10.5565 4.97575C13.3938 4.97575 17.0435 4.9878 18.7683 4.9878M15.0229 2.02051L18.2839 4.81639"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="bevel"></path>
+                                            <path
+                                                d="M20.7196 8.05413C22.4088 10.2412 22.51 13.7756 20.6632 16.1288C18.8164 18.4821 17.1799 19.0628 13.4756 19.0628C10.6383 19.0628 6.98856 19.0508 5.26376 19.0508M9.00916 22.0181L5.7482 19.2222"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="bevel"></path>
+                                        </svg><span>3.4k</span>
+                                    </div>
+                                    <div
+                                        class="like hover:text-red-500 hover:bg-gray-900 hover:rounded-full p-1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/favourite-stroke-standard.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M2 9.24835C2 5.90905 4.16367 2.99998 7.68 2.99998C9.64299 2.99998 11 3.99861 12 5.49861C13 3.99861 14.357 2.99998 16.32 2.99998C19.8363 2.99998 22 5.90905 22 9.24835C22 15.0599 16.6416 18.6767 12 20.9986C7.35839 18.6767 2 15.0599 2 9.24835Z"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="round"></path>
+                                        </svg><span> 1.2k</span>
+                                    </div>
+                                    <div
+                                        class="views hover:text-red-500 hover:bg-gray-900 hover:rounded-full p-1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <span class="!text-lg material-symbols-outlined">bar_chart_4_bars</span>
+                                        <span> 4.1M</span>
+                                    </div>
+                                    <div class="fav-or-share items-center flex gap-2 cursor-pointer text-gray-600">
+                                        <span class="material-symbols-outlined">bookmark</span>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/upload-04-solid-standard.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12 15.2499C12.5523 15.2499 13 14.8022 13 14.2499V7.74991H14.5C14.9045 7.74991 15.2691 7.50627 15.4239 7.13259C15.5787 6.75892 15.4931 6.3288 15.2071 6.0428L12.7071 3.5428C12.3166 3.15228 11.6834 3.15228 11.2929 3.5428L8.79292 6.0428C8.50692 6.3288 8.42137 6.75892 8.57615 7.13259C8.73093 7.50627 9.09557 7.74991 9.50003 7.74991H11V14.2499C11 14.8022 11.4477 15.2499 12 15.2499Z"
+                                                fill="#475569"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.83576 15.7637C4.38053 15.6729 4.89575 16.0409 4.98655 16.5857L5.20802 17.9145C5.28838 18.3967 5.70557 18.7501 6.19441 18.7501H17.8059C18.2947 18.7501 18.7119 18.3967 18.7923 17.9145L19.0138 16.5857C19.1046 16.0409 19.6198 15.6729 20.1646 15.7637C20.7093 15.8545 21.0773 16.3697 20.9865 16.9145L20.7651 18.2433C20.524 19.6898 19.2724 20.7501 17.8059 20.7501H6.19441C4.72789 20.7501 3.47632 19.6898 3.23523 18.2433L3.01376 16.9145C2.92297 16.3697 3.29099 15.8545 3.83576 15.7637Z"
+                                                fill="#475569"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hr h-[0.8px] bg-gray-600"></div>
+                <div class="post mb-2">
+                    <div class="flex">
+                        <div class="img m-4 mr-2">
+                            <img class="w-9 h-9 rounded-full"
+                                src="https://avatars.githubusercontent.com/u/162817769?v=4" alt="">
+                        </div>
+                        <div class="main-post w-full">
+                            <div class="name  relative mb-0 my-3.5 flex gap-3.5">
+                                <span class="font-semibold hover:underline transition-all"><a
+                                        href="https://github.com/HassaanMemon026/" target="_blank">Muhammad
+                                        Hassaan</a></span>
+                                <span class="text-gray-600 pt-1 text-sm ">@HassaanMemon026 · 8h </span>
+                                <span
+                                    class="!text-lg text-gray-600 cursor-pointer absolute right-4 my-auto   material-symbols-outlined">more_horiz</span>
+                            </div>
+                            <div class="des text-sm text-gray-300 opacity-95">Reality vs Movies</div>
+                            <div class="postimg mb-2 mt-3 mr-5 ml-0">
+                                <img class="rounded-xl w-full"
+                                    src="https://i.pinimg.com/736x/83/9f/2f/839f2f1a5b3362f69b09119eb5b3e983.jpg"
+                                    alt="">
+                            </div>
+                            <div class="like">
+                                <div class="flex text-sm mr-4 justify-between">
+                                    <div
+                                        class="comment transition hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/bubble-chat-stroke-rounded.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M22 11.5667C22 16.8499 17.5222 21.1334 12 21.1334C11.3507 21.1343 10.7032 21.0742 10.0654 20.9545C9.60633 20.8682 9.37678 20.8251 9.21653 20.8496C9.05627 20.8741 8.82918 20.9948 8.37499 21.2364C7.09014 21.9197 5.59195 22.161 4.15111 21.893C4.69874 21.2194 5.07275 20.4112 5.23778 19.5448C5.33778 19.0148 5.09 18.5 4.71889 18.1231C3.03333 16.4115 2 14.1051 2 11.5667C2 6.28357 6.47778 2 12 2C17.5222 2 22 6.28357 22 11.5667Z"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="round"></path>
+                                            <path d="M11.9955 12H12.0045M15.991 12H16M8 12H8.00897" stroke="#475569"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg><span> 990</span>
+                                    </div>
+                                    <div
+                                        class="re hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 transition  cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/repeat-stroke-sharp.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M3.31245 15.9844C1.62328 13.7974 1.52213 10.263 3.36893 7.90974C5.21573 5.55645 6.8522 4.97575 10.5565 4.97575C13.3938 4.97575 17.0435 4.9878 18.7683 4.9878M15.0229 2.02051L18.2839 4.81639"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="bevel"></path>
+                                            <path
+                                                d="M20.7196 8.05413C22.4088 10.2412 22.51 13.7756 20.6632 16.1288C18.8164 18.4821 17.1799 19.0628 13.4756 19.0628C10.6383 19.0628 6.98856 19.0508 5.26376 19.0508M9.00916 22.0181L5.7482 19.2222"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="bevel"></path>
+                                        </svg><span>3.4k</span>
+                                    </div>
+                                    <div
+                                        class="like hover:text-red-500 hover:bg-gray-900 hover:rounded-full p-1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/favourite-stroke-standard.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M2 9.24835C2 5.90905 4.16367 2.99998 7.68 2.99998C9.64299 2.99998 11 3.99861 12 5.49861C13 3.99861 14.357 2.99998 16.32 2.99998C19.8363 2.99998 22 5.90905 22 9.24835C22 15.0599 16.6416 18.6767 12 20.9986C7.35839 18.6767 2 15.0599 2 9.24835Z"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="round"></path>
+                                        </svg><span> 1.2k</span>
+                                    </div>
+                                    <div
+                                        class="views hover:text-blue-500 hover:bg-gray-900 hover:rounded-full p-1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <span class="!text-lg material-symbols-outlined">bar_chart_4_bars</span>
+                                        <span> 4.1M</span>
+                                    </div>
+                                    <div class="fav-or-share items-center flex gap-2 cursor-pointer text-gray-600">
+                                        <span class="material-symbols-outlined">bookmark</span>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/upload-04-solid-standard.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12 15.2499C12.5523 15.2499 13 14.8022 13 14.2499V7.74991H14.5C14.9045 7.74991 15.2691 7.50627 15.4239 7.13259C15.5787 6.75892 15.4931 6.3288 15.2071 6.0428L12.7071 3.5428C12.3166 3.15228 11.6834 3.15228 11.2929 3.5428L8.79292 6.0428C8.50692 6.3288 8.42137 6.75892 8.57615 7.13259C8.73093 7.50627 9.09557 7.74991 9.50003 7.74991H11V14.2499C11 14.8022 11.4477 15.2499 12 15.2499Z"
+                                                fill="#475569"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.83576 15.7637C4.38053 15.6729 4.89575 16.0409 4.98655 16.5857L5.20802 17.9145C5.28838 18.3967 5.70557 18.7501 6.19441 18.7501H17.8059C18.2947 18.7501 18.7119 18.3967 18.7923 17.9145L19.0138 16.5857C19.1046 16.0409 19.6198 15.6729 20.1646 15.7637C20.7093 15.8545 21.0773 16.3697 20.9865 16.9145L20.7651 18.2433C20.524 19.6898 19.2724 20.7501 17.8059 20.7501H6.19441C4.72789 20.7501 3.47632 19.6898 3.23523 18.2433L3.01376 16.9145C2.92297 16.3697 3.29099 15.8545 3.83576 15.7637Z"
+                                                fill="#475569"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hr h-[0.8px] bg-gray-500"></div>
+                <div class="post mb-2">
+                    <div class="flex">
+                        <div class="img m-4 mr-2">
+                            <img class="w-9 h-9 rounded-full"
+                                src="https://avatars.githubusercontent.com/u/162817769?v=4" alt="">
+                        </div>
+                        <div class="main-post w-full">
+                            <div class="name  relative mb-0 my-3.5 flex gap-3.5">
+                                <span class="font-semibold hover:underline transition-all"><a
+                                        href="https://github.com/HassaanMemon026/" target="_blank">Muhammad
+                                        Hassaan</a></span>
+                                <span class="text-gray-600 pt-1 text-sm ">@HassaanMemon026 · 8h </span>
+                                <span
+                                    class="!text-lg text-gray-600 cursor-pointer absolute right-4 my-auto   material-symbols-outlined">more_horiz</span>
+                            </div>
+                            <div class="des text-sm text-gray-300 opacity-95">When I do another work</div>
+                            <div class="postimg mb-2 mt-3 mr-5 ml-0">
+                                <img class="rounded-xl w-full"
+                                    src="https://miro.medium.com/v2/resize:fit:756/1*KcQUEkOQ1LoMDHkMZ-Yymw.jpeg"
+                                    alt="">
+                            </div>
+                            <div class="like">
+                                <div class="flex text-sm mr-4 justify-between">
+                                    <div
+                                        class="comment transition hover:bg-gray-900 hover:text-blue-500 hover:rounded-full p1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/bubble-chat-stroke-rounded.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M22 11.5667C22 16.8499 17.5222 21.1334 12 21.1334C11.3507 21.1343 10.7032 21.0742 10.0654 20.9545C9.60633 20.8682 9.37678 20.8251 9.21653 20.8496C9.05627 20.8741 8.82918 20.9948 8.37499 21.2364C7.09014 21.9197 5.59195 22.161 4.15111 21.893C4.69874 21.2194 5.07275 20.4112 5.23778 19.5448C5.33778 19.0148 5.09 18.5 4.71889 18.1231C3.03333 16.4115 2 14.1051 2 11.5667C2 6.28357 6.47778 2 12 2C17.5222 2 22 6.28357 22 11.5667Z"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="round"></path>
+                                            <path d="M11.9955 12H12.0045M15.991 12H16M8 12H8.00897" stroke="#475569"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg><span> 990</span>
+                                    </div>
+                                    <div
+                                        class="re hover:text-green-500 hover:bg-gray-900 hover:rounded-full p-1 transition  cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/repeat-stroke-sharp.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M3.31245 15.9844C1.62328 13.7974 1.52213 10.263 3.36893 7.90974C5.21573 5.55645 6.8522 4.97575 10.5565 4.97575C13.3938 4.97575 17.0435 4.9878 18.7683 4.9878M15.0229 2.02051L18.2839 4.81639"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="bevel"></path>
+                                            <path
+                                                d="M20.7196 8.05413C22.4088 10.2412 22.51 13.7756 20.6632 16.1288C18.8164 18.4821 17.1799 19.0628 13.4756 19.0628C10.6383 19.0628 6.98856 19.0508 5.26376 19.0508M9.00916 22.0181L5.7482 19.2222"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="bevel"></path>
+                                        </svg><span>3.4k</span>
+                                    </div>
+                                    <div
+                                        class="like hover:text-red-500 hover:bg-gray-900 hover:rounded-full p-1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/favourite-stroke-standard.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path
+                                                d="M2 9.24835C2 5.90905 4.16367 2.99998 7.68 2.99998C9.64299 2.99998 11 3.99861 12 5.49861C13 3.99861 14.357 2.99998 16.32 2.99998C19.8363 2.99998 22 5.90905 22 9.24835C22 15.0599 16.6416 18.6767 12 20.9986C7.35839 18.6767 2 15.0599 2 9.24835Z"
+                                                stroke="#475569" stroke-width="1.5" stroke-linejoin="round"></path>
+                                        </svg><span> 1.2k</span>
+                                    </div>
+                                    <div
+                                        class="views hover:text-red-500 hover:bg-gray-900 hover:rounded-full p-1 cursor-pointer items-center flex gap-1 text-gray-600">
+                                        <span class="!text-lg material-symbols-outlined">bar_chart_4_bars</span>
+                                        <span> 4.1M</span>
+                                    </div>
+                                    <div class="fav-or-share items-center flex gap-2 cursor-pointer text-gray-600">
+                                        <span class="material-symbols-outlined">bookmark</span>
+
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                            viewBox="0 0 24 24" fill="none" class="injected-svg"
+                                            data-src="https://cdn.hugeicons.com/icons/upload-04-solid-standard.svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#475569">
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M12 15.2499C12.5523 15.2499 13 14.8022 13 14.2499V7.74991H14.5C14.9045 7.74991 15.2691 7.50627 15.4239 7.13259C15.5787 6.75892 15.4931 6.3288 15.2071 6.0428L12.7071 3.5428C12.3166 3.15228 11.6834 3.15228 11.2929 3.5428L8.79292 6.0428C8.50692 6.3288 8.42137 6.75892 8.57615 7.13259C8.73093 7.50627 9.09557 7.74991 9.50003 7.74991H11V14.2499C11 14.8022 11.4477 15.2499 12 15.2499Z"
+                                                fill="#475569"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                d="M3.83576 15.7637C4.38053 15.6729 4.89575 16.0409 4.98655 16.5857L5.20802 17.9145C5.28838 18.3967 5.70557 18.7501 6.19441 18.7501H17.8059C18.2947 18.7501 18.7119 18.3967 18.7923 17.9145L19.0138 16.5857C19.1046 16.0409 19.6198 15.6729 20.1646 15.7637C20.7093 15.8545 21.0773 16.3697 20.9865 16.9145L20.7651 18.2433C20.524 19.6898 19.2724 20.7501 17.8059 20.7501H6.19441C4.72789 20.7501 3.47632 19.6898 3.23523 18.2433L3.01376 16.9145C2.92297 16.3697 3.29099 15.8545 3.83576 15.7637Z"
+                                                fill="#475569"></path>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="hr h-[0.8px] bg-gray-600"></div>
+            </div>
+        </div>
+        <div class="third hidden md:block sticky overflow-y-auto [&::-webkit-scrollbar]:hidden top-0 h-[100vh] w-full ">
+            <div
+                class="search w-1/2 focus-within:bg-transparent bg-neutral-900 border-[1px] border-black my-0.5 mx-4  focus-within:border-white text-white py-2 px-4 rounded-[100px] focus:outline-none">
+                <input type="text" class=" focus:outline-none " placeholder="Search" />
+            </div>
+            <div class="whats m-4 xl:w-1/2 md:w-full rounded-2xl bg-neutral-900">
+                <h1 class="text-xl p-4 font-bold">Whats happening</h1>
+                <div class="item flex flex-col ">
+                    <div class="px-5 py-1 cursor-pointer hover:bg-neutral-800 transition-all my-2">
+                        <div class="con text-xs text-neutral-500">Tranding in World</div>
+                        <div class="topic text-lg font-semibold">#DeepSeek</div>
+                        <div class="views text-xs text-neutral-500">78.9K Posts</div>
+                    </div>
+                    <div class="px-5 py-1 cursor-pointer hover:bg-neutral-800 transition-all my-2">
+                        <div class="con text-xs text-neutral-500">Tranding in Pakistan</div>
+                        <div class="topic text-lg font-semibold">#Champions Trophy</div>
+                        <div class="views text-xs text-neutral-500">41.4K Posts</div>
+                    </div>
+                    <div class="px-5 py-1 cursor-pointer hover:bg-neutral-800 transition-all my-2">
+                        <div class="con text-xs text-neutral-500">Tranding in Pakistan</div>
+                        <div class="topic text-lg font-semibold">#FBR Tax</div>
+                        <div class="views text-xs text-neutral-500">32.7K Posts</div>
+                    </div>
+                    <div class="px-5 py-1 cursor-pointer hover:bg-neutral-800 transition-all my-2">
+                        <div class="con text-xs text-neutral-500">Tranding in UK</div>
+                        <div class="topic text-lg font-semibold">#Politics</div>
+                        <div class="views text-xs text-neutral-500">46.8K Posts</div>
+                    </div>
+                    <div class="px-5 py-1 transition-all my-2">
+                        <div class="text-blue-500 inline-block cursor-pointer">Show more</div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="who m-4 xl:w-1/2 md:w-full rounded-2xl bg-neutral-900">
+                <h1 class="text-xl p-4 font-bold">Who to Follow</h1>
+                <div class="item flex flex-col">
+                    <div class="person my-2.5 justify-center items-center px-5 py-1 flex gap-1">
+                        <div class="img w-1/4">
+                            <img src="https://avatars.githubusercontent.com/u/162817769?v=4" alt=""
+                                class="w-12 h-12 rounded-full" />
+                        </div>
+                        <div class="info mr-2 w-2/4">
+                            <div class="name text-lg font-semibold">M Hassaan</div>
+                            <div class="username text-xs text-neutral-500">@HassaanMemon026</div>
+                        </div>
+                        <div class="follow -mr-2 w-1/4">
+                            <button
+                                class="bg-white text-black px-2.5 py-0.5 rounded-[100px] font-semibold cursor-pointer transition-all"><a
+                                    href="https://github.com/HassaanMemon026/" target="_blank">Follow</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="person my-2.5 justify-center items-center px-5 py-1 flex gap-1">
+                        <div class="img w-1/4">
+                            <img src="https://scontent.fkhi10-1.fna.fbcdn.net/v/t39.30808-1/448881113_482598534316853_1045215227391849912_n.jpg?stp=dst-jpg_s720x720_tt6&_nc_cat=108&ccb=1-7&_nc_sid=e99d92&_nc_eui2=AeFkWTwt0saiOVNBMA6Gupc9mpJ3w9RZ2t2aknfD1Fna3bOJ6MhlT3_dgtxaOzJOeemacrQTmHJncmw7tfHB7TEZ&_nc_ohc=KSJaXjZlukYQ7kNvgG4UGJU&_nc_oc=AdjjHmMhTFYNboLeBggoyx-QPJreGRDqLYfgB0fLnTlTBh81iifYsYDlfvaeVsu-ISQ&_nc_zt=24&_nc_ht=scontent.fkhi10-1.fna&_nc_gid=AZFFrSldc9LWosR2CNxKy6m&oh=00_AYG4WLTh4K8UTw0-dSUL6RB96ba11J5GqWbWfvOWSOdtmw&oe=67D118CF"
+                                alt="" class="w-12 h-12 rounded-full" />
+                        </div>
+                        <div class="info mr-2 w-2/4">
+                            <div class="name text-lg font-semibold">M Hassaan</div>
+                            <div class="username text-xs text-neutral-500">@HassaanMemon026</div>
+                        </div>
+                        <div class="follow -mr-2 w-1/4">
+                            <button
+                                class="bg-white text-black px-2.5 py-0.5 rounded-[100px] font-semibold cursor-pointer transition-all"><a
+                                    href="https://github.com/HassaanMemon026/" target="_blank">Follow</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="person my-2.5 justify-center items-center px-5 py-1 flex gap-1">
+                        <div class="img w-1/4">
+                            <img src="https://avatars.githubusercontent.com/u/162817769?v=4" alt=""
+                                class="w-12 h-12 rounded-full" />
+                        </div>
+                        <div class="info mr-2 w-2/4">
+                            <div class="name text-lg font-semibold">M Hassaan</div>
+                            <div class="username text-xs text-neutral-500">@HassaanMemon026</div>
+                        </div>
+                        <div class="follow -mr-2 w-1/4">
+                            <button
+                                class="bg-white text-black px-2.5 py-0.5 rounded-[100px] font-semibold cursor-pointer transition-all"><a
+                                    href="https://github.com/HassaanMemon026/" target="_blank">Follow</a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="px-5 py-1 transition-all my-2">
+                        <div class="text-blue-500 inline-block cursor-pointer">Show more</div>
+                    </div>
+                </div>
+            </div>
+            <div class="terms m-4 xl:w-1/2 md:w-full rounded-2xl text-xs px-2 text-neutral-500 transition">
+                <span class="hover:underline cursor-pointer mr-2">Terms of Service</span>
+                <span class="hover:underline cursor-pointer mr-2">Privacy Policy</span>
+                <span class="hover:underline cursor-pointer mr-2">Cookie Policy</span>
+                <span class="hover:underline cursor-pointer mr-2">Accessibility</span>
+                <span class="hover:underline cursor-pointer mr-2">Ads info</span>
+                <span class="hover:underline cursor-pointer mr-2">More</span>
+                <span class="hover:underline cursor-pointer mr-2">© 2024 X Corp.</span>
+            </div>
+        </div>
+</body>
+
+</html>
